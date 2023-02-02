@@ -1,0 +1,207 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(248 250 252);
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.styleForm{
+    background-color: white;
+    width: 55vw;
+    /* min-width: 40vw;
+    max-width: 100vw; */
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid;
+    border-color: rgba(223 223 223);
+    border-width: 1px;
+
+}
+
+.form-control-self{
+    font-size: 14px;
+    padding: 8px;
+}
+
+.numberInputTel{
+    font-size: 14px;
+    font-family: Helvetica;
+}
+
+.background-tittle{
+    background-color: #37424a;
+    width: 55vw;
+    border-radius: 5px 5px 0px 0px;
+    border-color: rgba(223 223 223);
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+
+}
+
+
+.text-tittle{
+    
+    color: rgba(248 250 252);
+    font-size: 21px;
+    font-family: Helvetica;
+    font-weight: 100;
+    
+}
+
+.text-label-input{
+    font-family: Helvetica;
+    font-size: 77%;
+}
+
+.text-label-input2{
+    font-family: Helvetica;
+    font-size: 78%;
+   
+
+}
+
+.text-label-input3{
+    font-family: Helvetica;
+    font-size: 14px;
+    margin-right: 5px;
+
+}
+
+
+
+.caracter-logo-uandes{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.img-logo-carct{
+    width: 15px;
+}
+
+.btn-style{
+    background-color: #37424a;
+}
+
+.btn-text{
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+
+}
+
+.btn-div{
+    width: 55vw;
+}
+
+#font-validation-alert{
+
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration:underline;
+    color: #E00034;
+}
+
+#font-validation-ok{
+
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration:underline;
+    color: green;
+}
+
+#caract-obligatorio{
+    font-size: 18px;
+    color: #E00034;
+}
+
+.div-font-info{
+    padding: 6px;
+    margin: 6px;
+
+}
+
+#div-img{
+    width: 100%;
+    height: auto;
+    
+}
+
+#img-background{
+    width:100%;
+    height: 100px;
+    background-image: url("../public/img/uandes01V3.png");
+
+    /* background-attachment: fixed; */
+
+}
+
+#img-background-logo-uandes{
+    width: 250px;
+    
+    background-image: url("../public/img/marca_principal.png");  
+    /* background-attachment: fixed; */
+}
+
+.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+.tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+.tftable tr {background-color:#d4e3e5;}
+.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+.tftable tr:hover {background-color:#ffffff;}
+
+
+.file-upload__input {
+    display: none;
+  }
+
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px 3px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	background-color:#fff;
+	filter: alpha(opacity=0);
+}
+
+.filenameupload {
+	width:98%;	
+}
+
+#upload_prev {
+	border:thin solid #000;
+	width: 100%;
+	padding:0.5em 1em 1.5em 1em;
+}
+
+#upload_prev span {
+    display: flex;
+	padding: 0 5px;
+	font-size:12px;
+}
+
+p.close {
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+	padding-bottom:0;
+}
+
+
+.file-upload___input {
+    display: none;
+  }
+
