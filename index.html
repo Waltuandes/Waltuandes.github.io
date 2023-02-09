@@ -35,7 +35,7 @@
         <div class="p-1">
             <form id="formularioEstandar">
 
-                <div class="background-tittle p-2 ps-4 mt-3 d-flex flex-row">
+               <!-- <div class="background-tittle p-2 ps-4 mt-3 d-flex flex-row">
                     <div class="me-2">
                         <img src="./public/img/corporativos-2.png" class="img-logo-carct" alt="">
                     </div>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="styleForm pe-4 ps-4 pt-4 pb-2">
+                   <div class="styleForm pe-4 ps-4 pt-4 pb-2">
                     <div class="col-sm-8  ms-auto">
                         <div class="form-check m-1">
                         <input class="form-check-input" type="radio" name="flexRadioTipoFormulario" id="inputRadioFormularioEstandar" checked>
@@ -73,7 +73,7 @@
                         </label>
                         </div>
                     </div>
-                </div> 
+                </div> -->
 
                 <div class="background-tittle p-2 ps-4 d-flex flex-row;">
                     <div class="me-2">
@@ -85,8 +85,40 @@
                         </span>
                     </div>
                 </div>
+                
                 <div class="styleForm pe-4 ps-4 pt-4 pb-2">
 
+                <div class="row mb-3" style="--bs-gutter-x: 0.3rem;">
+                        <label for="inputCategoria" class="col-sm-2 col-form-label col-form-label-sm text-label-input">Categoria Compra<span id="caract-obligatorio">*</span></label>
+                        <div class="col-sm-4">
+                            <div>
+                                <input class="form-control" list="datalistOption1" id="exampleDataList" placeholder="Seleccione Categoria..">
+                                <datalist id="datalistOption1">
+                                    <option	value = "en espera de informacion">
+                                </datalist>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="row mb-3" style="--bs-gutter-x: 0.2rem;" >
+                    <label for="inputSubcategoria" class="col-sm-2 col-form-label col-form-label-sm text-label-input">Subcategoria Compra<span id="caract-obligatorio">*</span></label>
+                    <div class="col-sm-4">
+                        <div>
+                            <input class="form-control" list="datalistOptions3" id="exampleDataList" placeholder="Seleccione Subcategoria..">
+                            <datalist id="datalistOptions3">
+                                <option	value = "en espera de informacion">
+                            </datalist>
+                    </div>
+                   
+                </div>
+            </div>
+           
+
+
+                
+
+                    
                     <div class="row mb-3" style="--bs-gutter-x: 0.3rem;">
                         <label for="inputUsuarioSolicitante" class="col-sm-2 col-form-label col-form-label-sm text-label-input">Usuario solicitante<span id="caract-obligatorio">*</span></label>
                         <div class="col-sm-4">
@@ -2809,6 +2841,66 @@
                     </div>
 
                 </div>
+                <div class="background-tittle p-2 ps-4 mt-3 d-flex flex-row">
+                    <div class="me-2">
+                        <img src="./public/img/corporativos-2.png" class="img-logo-carct" alt="">
+                    </div>
+                    <div>
+                        <span class="text-tittle">
+                            Formato archivo tipo solicitud
+                        </span>
+                    </div>
+                </div>
+
+                <div class="styleForm pe-4 ps-4 pt-4 pb-4">
+
+                    <div class="alert alert-secondary d-flex align-items-center div-font-info" role="alert">
+                        <div class="ms-2 me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                            </svg>
+                        </div>
+                        <div class="">
+                            <div class="text-label-input m-1">
+                                Seleccione Formato archivo de tipo solicitud de cotizacion:
+                            </div>
+                            <div class="m-2">
+                                <div class="m-1 d-flex flex-row">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-word" viewBox="0 0 16 16">
+                                            <path d="M5.485 6.879a.5.5 0 1 0-.97.242l1.5 6a.5.5 0 0 0 .967.01L8 9.402l1.018 3.73a.5.5 0 0 0 .967-.01l1.5-6a.5.5 0 0 0-.97-.242l-1.036 4.144-.997-3.655a.5.5 0 0 0-.964 0l-.997 3.655L5.485 6.88z"/>
+                                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <a href="./public/doc/Formulario Sol. cotizacion impresos y merchandising.docx" target="_blank" rel="Formulario Sol. cotizacion impresos y merchandising">
+                                            <span class="text-label-input"> Formulario Sol. cotizacion impresos y merchandising</span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="m-1 d-flex flex-row">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-word" viewBox="0 0 16 16">
+                                            <path d="M5.485 6.879a.5.5 0 1 0-.97.242l1.5 6a.5.5 0 0 0 .967.01L8 9.402l1.018 3.73a.5.5 0 0 0 .967-.01l1.5-6a.5.5 0 0 0-.97-.242l-1.036 4.144-.997-3.655a.5.5 0 0 0-.964 0l-.997 3.655L5.485 6.88z"/>
+                                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <a href="./public/doc/Formulario Sol. Cotizacion de libros.xlsx" target="_blank" rel="Formulario Sol. Cotizacion de libros">
+                                            <span class="text-label-input"> Formulario Sol. Cotizacion de libros</span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div> 
 
                 <div class="background-tittle p-2 ps-4 mt-3 d-flex flex-row">
                     <div class="me-2">
@@ -2820,6 +2912,7 @@
                         </span>
                     </div>
                 </div>
+                
                 <div class="styleForm pe-4 ps-4 pt-4 pb-4">
                     <div class="row">
                         <textarea rows="4" id="myFile" placeholder="Debe detallar de manera clara y completar con todos los datos posibles indicando marca, color, características técnicas, etc. Se pueden cargar archivos complementarios (Excel, Word, print pantalla, link de páginas, etc.)."></textarea>
@@ -2904,13 +2997,13 @@
                     </div>
                 </div> 
 
-                <div class="d-flex justify-content-center m-3">
+               <!-- <div class="d-flex justify-content-center m-3">
                     <div class="d-flex flex-column">
                     <div class="g-recaptcha" data-sitekey="6Lf1qQofAAAAAP4wCskVOeG73RR6yZRH8PRXogMx" data-callback="verifyCaptcha"></div>
                     <div id="gRecaptchaError"></div>
                 </div>
                 
-                </div>
+                </div>-->
 
                 <div style="display:none" id="buttonSpinner">
                     <div class="btn-div m-2 d-flex justify-content-center" >
