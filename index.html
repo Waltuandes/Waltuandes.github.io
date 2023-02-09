@@ -86,33 +86,48 @@
                     </div>
                 </div>
                 
+                
                 <div class="styleForm pe-4 ps-4 pt-4 pb-2">
 
-                <div class="row mb-3" style="--bs-gutter-x: 0.3rem;">
-                        <label for="inputCategoria" class="col-sm-2 col-form-label col-form-label-sm text-label-input">Categoria Compra<span id="caract-obligatorio">*</span></label>
-                        <div class="col-sm-4">
-                            <div>
-                                <input class="form-control" list="datalistOption1" id="exampleDataList" placeholder="Seleccione Categoria..">
-                                <datalist id="datalistOption1">
-                                    <option	value = "en espera de informacion">
-                                </datalist>
+                    <div class="row mb-3">
+                        <label for="inputCatCompra" class="col-sm-4 col-form-label col-form-label-sm text-label-input" style="margin-right: -16%;">Categoría de Compra<span id="caract-obligatorio">*</span></label>
+                        <div class="col-sm-8">
+                            <select class="form-select text-label-input" id="inputCatCompra">
+                                <option selected value="">Seleccion Categoría</option>
+                                <option value="Arriendos">Arriendos</option>
+                                <option value="Bases de Datos y Suscripciones">Bases de Datos y Suscripciones</option>
+                                <option value="Campos Clínicos">Campos Clínicos</option>
+                                <option value="Certificación">Certificación</option>
+                                <option value="Consultoría">Consultoría</option>
+                                <option value="Correspondencia y Traslados">Correspondencia y Traslados</option>
+                                <option value="Eventos">Eventos</option>
+                                <option value="Gastos de Promoción y Publicidad">Gastos de Promoción y Publicidad</option>
+                                <option value="Gastos de Viaje y Representación">Gastos de Viaje y Representación</option>
+                                <option value="Impresos">Impresos</option>
+                                <option value="Insumos Administrativos">Insumos Administrativos</option>
+                                <option value="Insumos Carreras Salud y Laboratorios">Insumos Carreras Salud y Laboratorios</option>
+                                <option value="Insumos Promoción y Publicidad">Insumos Promoción y Publicidad</option>
+                                <option value="Mantención Preventiva y Correctiva">Mantención Preventiva y Correctiva</option>
+                                <option value="Materiales no Productivos">Materiales no Productivos</option>
+                                <option value="Medicina">Medicina</option>
+                                <option value="Otra">Otra</option>
+                                <option value="Presencia en Medios">Presencia en Medios</option>
+                                <option value="Seguro">Seguro</option>
+                                <option value="Seminarios">Seminarios</option>
+                                <option value="Servicios Básicos">Servicios Básicos</option>
+                                <option value="Servicios de Alimentación">Servicios de Alimentación</option>
+                                <option value="Servicios e Infraestructura Tecnológica">Servicios e Infraestructura Tecnológica</option>
+                                <option value="Servicios Externos">Servicios Externos</option>
+                                <option value="Servicios Financieros">Servicios Financieros</option>
+                                <option value="Servicios Operación Campus">Servicios Operación Campus</option>
+                                <option value="Transporte de Personas">Transporte de Personas</option>
+                                <option value="Traslado de Basura">Traslado de Basura</option>
+                                <option value="Uniformes">Uniformes</option>
+                            </select>
+                            <div class="form-text" id="alertCatCompra">
+                            </div>
                         </div>
-                       
                     </div>
-                </div>
-
-                <div class="row mb-3" style="--bs-gutter-x: 0.2rem;" >
-                    <label for="inputSubcategoria" class="col-sm-2 col-form-label col-form-label-sm text-label-input">Subcategoria Compra<span id="caract-obligatorio">*</span></label>
-                    <div class="col-sm-4">
-                        <div>
-                            <input class="form-control" list="datalistOptions3" id="exampleDataList" placeholder="Seleccione Subcategoria..">
-                            <datalist id="datalistOptions3">
-                                <option	value = "en espera de informacion">
-                            </datalist>
-                    </div>
-                   
-                </div>
-            </div>
            
 
 
@@ -121,7 +136,7 @@
                     
                     <div class="row mb-3" style="--bs-gutter-x: 0.3rem;">
                         <label for="inputUsuarioSolicitante" class="col-sm-2 col-form-label col-form-label-sm text-label-input">Usuario solicitante<span id="caract-obligatorio">*</span></label>
-                        <div class="col-sm-4">
+                        <div class="col-sm-8">
                             <div>
                             <input type="text" class="form-control form-control-self" id="inputUsuarioSolicitante" placeholder="Obligatorio">
                             </div>
@@ -139,10 +154,10 @@
                     </div>
 
                     <div class="row mb-3" style="--bs-gutter-x: 0.3rem;">
-                        <label for="inputUnidadSolicitante" class="col-sm-2 col-form-label col-form-label-sm text-label-input">Unidad solicitante<span id="caract-obligatorio">*</span></label>
-                        <div class="col-sm-4">
+                        <label for="inputUnidadSolicitante" class="col-sm-2 col-form-label col-form-label-sm text-label-input" >Unidad solicitante<span id="caract-obligatorio">*</span></label>
+                        <div class="col-sm-8">
                             <div>
-                                <input class="form-control" list="datalistOptionss" id="exampleDataList" placeholder="Seleccione Unidad..">
+                                <input class="form-control" list="datalistOptionss" id="exampleDataList" style=" font-family: Helvetica; font-size: 66%;" placeholder="Seleccione Unidad..">
                                 <datalist id="datalistOptionss">
                                     <option	value = "ADMGRALREC - Sec administracion gral/rectoria/secretario gral">
                                         <option	value = "CENODONTOL - Sec centro odontologico">
@@ -206,10 +221,10 @@
                     <div class="row mb-3" style="--bs-gutter-x: 0.1rem;">
 
                         <label for="inputCentroCosto" class="col-sm-2 col-form-label col-form-label-sm text-label-input2">Centro de Costo<span id="caract-obligatorio">*</span></label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-8">
                         <div>
 
-                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Seleccione Centro..">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList" style=" font-family: Helvetica; font-size: 66%;" placeholder="Seleccione Centro..">
                                 <datalist id="datalistOptions">
                                     <option	value = "S1ENF00001 - ENFERMERIA">
                                         <option	value = "S1ENF00100 - POSTGRADO">
@@ -1079,7 +1094,7 @@
 
                         <label for="startDate" class="col-sm-2 col-form-label col-form-label-sm text-label-input">Fecha estimada de entrega<span id="caract-obligatorio">*</span></label>
                         <div class="col-sm-4">
-                            <input id="inputFechaEstimada" class="form-control" type="date" />
+                            <input id="inputFechaEstimada" class="form-control" type="date" style=" font-family: Helvetica; font-size: 66%;"/>
                             <div class="form-text" id="alertFechaEstimada">
                             </div>
                         </div>
@@ -1092,9 +1107,9 @@
                             <div class="form-text" id="alertMonto">
                             </div>
                         </div>
-                        <label for="inputProveedor" class="col-sm-2 col-form-label col-form-label-sm text-label-input">Proveedor sugerido</label>
+                        <label for="inputProveedor" class="col-sm-2 col-form-label col-form-label-sm text-label-input" >Proveedor sugerido</label>
                         <div class="col-sm-4">
-                           <input class="form-control" list="datalistOptionsss" id="exampleDataList" placeholder="Seleccione Proveedor..">
+                           <input class="form-control" list="datalistOptionsss" id="exampleDataList" style=" font-family: Helvetica; font-size: 66%;" placeholder="Seleccione Proveedor..">
                                 <datalist id="datalistOptionsss">
                                     <option	value = "10001910 - Hector Alfonso Araneda Guzmán - 10616639-0">
                                         <option	value = "10013839 - Alucom S.P.A.  - 76284192-4">
@@ -2915,7 +2930,7 @@
                 
                 <div class="styleForm pe-4 ps-4 pt-4 pb-4">
                     <div class="row">
-                        <textarea rows="4" id="myFile" placeholder="Debe detallar de manera clara y completar con todos los datos posibles indicando marca, color, características técnicas, etc. Se pueden cargar archivos complementarios (Excel, Word, print pantalla, link de páginas, etc.)."></textarea>
+                        <textarea rows="4" id="myFile" style=" font-family: Helvetica; font-size: 66%;" placeholder="Debe detallar de manera clara y completar con todos los datos posibles indicando marca, color, características técnicas, etc. Se pueden cargar archivos complementarios (Excel, Word, print pantalla, link de páginas, etc.)."></textarea>
                         <div class="form-text" id="alertDescripcion">
                         </div>
                         <!-- application/vnd.ms-excel -->
@@ -3133,6 +3148,215 @@ function uploadOnChange() {
     }
     document.getElementById('filename').value = filename;
 }
+
+function showSubCatAccordingCat(){
+
+while (inputSubCatCompra.firstChild) {
+    inputSubCatCompra.removeChild(inputSubCatCompra.firstChild);
+}
+
+$("#inputSubCatCompra").append(`<option selected value="">Seleccion SubCategoría</option>`);
+
+if(inputCatCompra.value == "Arriendos"){
+    $("#inputSubCatCompra").append(`<option value="Arr. de Bienes Inmue">Arr. de Bienes Inmue</option>`);
+    $("#inputSubCatCompra").append(`<option value="Arr. de Bienes Muebl">Arr. de Bienes Muebl</option>`);
+    $("#inputSubCatCompra").append(`<option value="Arriendo Equipos e I">Arriendo Equipos e I</option>`);
+    $("#inputSubCatCompra").append(`<option value="Arriendos">Arriendos</option>`);
+}
+
+if(inputCatCompra.value == "Bases de Datos y Suscripciones"){
+    $("#inputSubCatCompra").append(`<option value="B.de datos Académica">B.de datos Académica</option>`);
+    $("#inputSubCatCompra").append(`<option value="Base de datos Comerc">Base de datos Comerc</option>`);
+    $("#inputSubCatCompra").append(`<option value="Membresia">Membresia</option>`);
+    $("#inputSubCatCompra").append(`<option value="Suscrip Diarios y re">Suscrip Diarios y re</option>`);
+    $("#inputSubCatCompra").append(`<option value="Suscrip. Académicas">Suscrip. Académicas</option>`);        
+}
+
+if(inputCatCompra.value == "Campos Clínicos"){
+    $("#inputSubCatCompra").append(`<option value="Campos Clinicos">Campos Clinicos</option>`);
+}
+
+if(inputCatCompra.value == "Certificación"){
+    $("#inputSubCatCompra").append(`<option value="Certificación">Certificación</option>`);
+}
+
+if(inputCatCompra.value == "Consultoría"){
+    $("#inputSubCatCompra").append(`<option value="Consultorias">Consultorias</option>`);
+    $("#inputSubCatCompra").append(`<option value="Diseño">Diseño</option>`);
+    $("#inputSubCatCompra").append(`<option value="Estudios de Mercado">Estudios de Mercado</option>`);
+    $("#inputSubCatCompra").append(`<option value="Interpretes y Traduc">Interpretes y Traduc</option>`);
+    $("#inputSubCatCompra").append(`<option value="Legales">Legales</option>`);
+    $("#inputSubCatCompra").append(`<option value="Serv Invest. y desar">Serv Invest. y desar</option>`);
+}
+
+if(inputCatCompra.value == "Correspondencia y Traslados"){
+    $("#inputSubCatCompra").append(`<option value="Correo y Envío de Co">Correo y Envío de Co</option>`);
+    $("#inputSubCatCompra").append(`<option value="Fletes y Traslados">Fletes y Traslados</option>`);
+    $("#inputSubCatCompra").append(`<option value="Movilización Persona">Movilización Persona</option>`);
+}
+
+if(inputCatCompra.value == "Eventos"){
+    $("#inputSubCatCompra").append(`<option value="Auspicios Eventos">Auspicios Eventos</option>`);
+    $("#inputSubCatCompra").append(`<option value="Eventos y Celebracio">Eventos y Celebracio</option>`);    
+}
+
+if(inputCatCompra.value == "Gastos de Promoción y Publicidad"){
+    $("#inputSubCatCompra").append(`<option value="Asesorias Publicitar">Asesorias Publicitar</option>`);
+    $("#inputSubCatCompra").append(`<option value="Publicidad">Publicidad</option>`);   
+}
+
+if(inputCatCompra.value == "Gastos de Viaje y Representación"){
+    $("#inputSubCatCompra").append(`<option value="Alojamiento, Viático">Alojamiento, Viático</option>`);
+    $("#inputSubCatCompra").append(`<option value="Pasajes (Participaci">Pasajes (Participaci</option>`);      
+}
+
+if(inputCatCompra.value == "Impresos"){
+    $("#inputSubCatCompra").append(`<option value="Central de Apuntes">Central de Apuntes</option>`);
+    $("#inputSubCatCompra").append(`<option value="Folletos">Folletos</option>`);
+    $("#inputSubCatCompra").append(`<option value="Fotocopias y servici">Fotocopias y servici</option>`);
+    $("#inputSubCatCompra").append(`<option value="Servicio de Empaste">Servicio de Empaste</option>`);       
+}
+
+if(inputCatCompra.value == "Insumos Administrativos"){
+    $("#inputSubCatCompra").append(`<option value="Accesorios de Lumina">Accesorios de Lumina</option>`);
+    $("#inputSubCatCompra").append(`<option value="Ferreteria">Ferreteria</option>`);
+    $("#inputSubCatCompra").append(`<option value="Insumos de Aseo">Insumos de Aseo</option>`);
+    $("#inputSubCatCompra").append(`<option value="Insumos Generales">Insumos Generales</option>`);
+    $("#inputSubCatCompra").append(`<option value="Materiales Oficina">Materiales Oficina</option>`);
+    $("#inputSubCatCompra").append(`<option value="Víveres y Comestible">Víveres y Comestible</option>`); 
+}
+
+if(inputCatCompra.value == "Insumos Carreras Salud y Laboratorios"){
+    $("#inputSubCatCompra").append(`<option value="Fármacos y materiale">Fármacos y materiale</option>`);
+    $("#inputSubCatCompra").append(`<option value="Insumo para ensayo C">Insumo para ensayo C</option>`);
+    $("#inputSubCatCompra").append(`<option value="Insumos Laboratorios">Insumos Laboratorios</option>`);
+    $("#inputSubCatCompra").append(`<option value="Material de Docencia">Material de Docencia</option>`);
+    $("#inputSubCatCompra").append(`<option value="Material de Investig">Material de Investig</option>`);
+    $("#inputSubCatCompra").append(`<option value="Materiales Clinicos">Materiales Clinicos</option>`);
+    $("#inputSubCatCompra").append(`<option value="Materiales Odontolog">Materiales Odontolog</option>`);
+    $("#inputSubCatCompra").append(`<option value="Reactivos">Reactivos</option>`);
+    $("#inputSubCatCompra").append(`<option value="Reactivos y Material">Reactivos y Material</option>`);
+}
+
+if(inputCatCompra.value == "Insumos Promoción y Publicidad"){
+    $("#inputSubCatCompra").append(`<option value="Gasto Artículos Prom">Gasto Artículos Prom</option>`);
+    $("#inputSubCatCompra").append(`<option value="Materiales y Artícul">Materiales y Artícul</option>`);
+    $("#inputSubCatCompra").append(`<option value="Regalos Corporativos">Regalos Corporativos</option>`);
+}
+
+if(inputCatCompra.value == "Mantención Preventiva y Correctiva"){
+    $("#inputSubCatCompra").append(`<option value="Mant  Equipos comuni">Mant  Equipos comuni</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mant Bombas y estanq">Mant Bombas y estanq</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mant Equipos Audiovi">Mant Equipos Audiovi</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mant Equipos segurid">Mant Equipos segurid</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mant. Equip. y Mobil">Mant. Equip. y Mobil</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mant. Instrumentos M">Mant. Instrumentos M</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mant. Redes de Gas">Mant. Redes de Gas</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mantde Equipo de Lab">Mantde Equipo de Lab</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mantención de Aire A">Mantención de Aire A</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mantención de Ascens">Mantención de Ascens</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mantención de Calder">Mantención de Calder</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mantención de Camara">Mantención de Camara</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mantención de Ductos">Mantención de Ductos</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mantención de Edific">Mantención de Edific</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mantención de Electr">Mantención de Electr</option>`);
+    $("#inputSubCatCompra").append(`<option value="Mantención y Reparac">Mantención y Reparac</option>`);
+    $("#inputSubCatCompra").append(`<option value="Manutención Sanitari">Manutención Sanitari</option>`);    
+}
+
+if(inputCatCompra.value == "Materiales no Productivos"){
+    $("#inputSubCatCompra").append(`<option value="Caja de navidad">Caja de navidad</option>`);
+    $("#inputSubCatCompra").append(`<option value="Carnet Universitario">Carnet Universitario</option>`);
+    $("#inputSubCatCompra").append(`<option value="Materiales de Manten">Materiales de Manten</option>`);
+    $("#inputSubCatCompra").append(`<option value="Pase escolar">Pase escolar</option>`);
+    $("#inputSubCatCompra").append(`<option value="Regalos Recien Nacid">Regalos Recien Nacid</option>`);
+    $("#inputSubCatCompra").append(`<option value="Reposicion de Mantel">Reposicion de Mantel</option>`);
+    $("#inputSubCatCompra").append(`<option value="Señaleticas">Señaleticas</option>`);    
+}
+
+if(inputCatCompra.value == "Medicina"){
+    $("#inputSubCatCompra").append(`<option value="Part médicas consult">Part médicas consult</option>`);
+}
+
+if(inputCatCompra.value == "Otra"){
+    $("#inputSubCatCompra").append(`<option value="Otro">Otro</option>`);
+}
+
+if(inputCatCompra.value == "Presencia en Medios"){
+    $("#inputSubCatCompra").append(`<option value="Presencia en Medios">Presencia en Medios</option>`);
+}
+
+if(inputCatCompra.value == "Seguro"){
+    $("#inputSubCatCompra").append(`<option value="Seguro Vida y Salud">Seguro Vida y Salud</option>`);
+    $("#inputSubCatCompra").append(`<option value="Seguros Todo Riesgo y RC">Seguros Todo Riesgo y RC</option>`);
+}
+
+if(inputCatCompra.value == "Seminarios"){
+    $("#inputSubCatCompra").append(`<option value="Seminarios Residenci">Seminarios Residenci</option>`);
+}
+
+if(inputCatCompra.value == "Servicios Básicos"){
+    $("#inputSubCatCompra").append(`<option value="Agua">Agua</option>`);
+    $("#inputSubCatCompra").append(`<option value="Combustible">Combustible</option>`);
+    $("#inputSubCatCompra").append(`<option value="Gas">Gas</option>`);
+    $("#inputSubCatCompra").append(`<option value="Luz">Luz</option>`);
+    $("#inputSubCatCompra").append(`<option value="Telefonía (Residenci">Telefonía (Residenci</option>`);        
+}
+
+if(inputCatCompra.value == "Servicios de Alimentación"){
+    $("#inputSubCatCompra").append(`<option value="Almuerzo Personal">Almuerzo Personal</option>`);
+    $("#inputSubCatCompra").append(`<option value="Ceremonia de Titulac">Ceremonia de Titulac</option>`);
+    $("#inputSubCatCompra").append(`<option value="Serv Alimentacion">Serv Alimentacion</option>`);         
+}
+
+if(inputCatCompra.value == "Servicios e Infraestructura Tecnológica"){
+    $("#inputSubCatCompra").append(`<option value="Adm y soporte Red">Adm y soporte Red</option>`);
+    $("#inputSubCatCompra").append(`<option value="Internet">Internet</option>`);
+    $("#inputSubCatCompra").append(`<option value="Leasing Computaciona">Leasing Computaciona</option>`);
+    $("#inputSubCatCompra").append(`<option value="Licencias de SW">Licencias de SW</option>`);
+    $("#inputSubCatCompra").append(`<option value="Seguridad Informátic">Seguridad Informátic</option>`);
+    $("#inputSubCatCompra").append(`<option value="Servicio Enlace Dedi">Servicio Enlace Dedi</option>`);
+    $("#inputSubCatCompra").append(`<option value="Servicios Outsorcing">Servicios Outsorcing</option>`);
+    $("#inputSubCatCompra").append(`<option value="Soporte y Mant Aplic">Soporte y Mant Aplic</option>`);
+    $("#inputSubCatCompra").append(`<option value="Soporte y Mant hardw">Soporte y Mant hardw</option>`);   
+}
+
+if(inputCatCompra.value == "Servicios Externos"){
+    $("#inputSubCatCompra").append(`<option value="Fotografia">Fotografia</option>`);
+    $("#inputSubCatCompra").append(`<option value="Gastos de Vehículos">Gastos de Vehículos</option>`);
+    $("#inputSubCatCompra").append(`<option value="Sala Cuna">Sala Cuna</option>`);
+    $("#inputSubCatCompra").append(`<option value="Serv.búsqueda y Sele">Serv.búsqueda y Sele</option>`);
+    $("#inputSubCatCompra").append(`<option value="Servicios de Desinfe">Servicios de Desinfe</option>`);
+    $("#inputSubCatCompra").append(`<option value="Servicios de Digitac">Servicios de Digitac</option>`);
+    $("#inputSubCatCompra").append(`<option value="Servicios Esteriliza">Servicios Esteriliza</option>`);
+    $("#inputSubCatCompra").append(`<option value="Servicios Lavandería">Servicios Lavandería</option>`); 
+}
+
+if(inputCatCompra.value == "Servicios Financieros"){
+    $("#inputSubCatCompra").append(`<option value="Servicio Cobranza">Servicio Cobranza</option>`);
+}
+
+if(inputCatCompra.value == "Servicios Operación Campus"){
+    $("#inputSubCatCompra").append(`<option value="Aseo">Aseo</option>`);
+    $("#inputSubCatCompra").append(`<option value="Jardines y Paisajism">Jardines y Paisajism</option>`);
+    $("#inputSubCatCompra").append(`<option value="Seguridad">Seguridad</option>`);
+    $("#inputSubCatCompra").append(`<option value="Servicio de Aseos Ex">Servicio de Aseos Ex</option>`);
+}
+
+if(inputCatCompra.value == "Transporte de Personas"){
+    $("#inputSubCatCompra").append(`<option value="Servicios de Moviliz">Servicios de Moviliz</option>`);
+}
+
+if(inputCatCompra.value == "Traslado de Basura"){
+    $("#inputSubCatCompra").append(`<option value="Traslado de Basura">Traslado de Basura</option>`);
+}
+
+if(inputCatCompra.value == "Uniformes"){
+    $("#inputSubCatCompra").append(`<option value="Uniformes Auxiliares">Uniformes Auxiliares</option>`);
+}
+
+}
+
 
 
 </script>

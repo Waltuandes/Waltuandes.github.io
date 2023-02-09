@@ -7,7 +7,7 @@ function verifyCaptcha(token) {
 
 //busqueda filtro tabla
 var busqueda = document.getElementById('buscar');
-var table = document.getElementById("tabla").tBodies[0];
+
 
 buscaTabla = function(){
   texto = busqueda.value.toLowerCase();
@@ -96,6 +96,9 @@ let inputUsuarioSolicitante = document.getElementById("inputUsuarioSolicitante")
 let alertUsuarioSolicitante = document.getElementById("alertUsuarioSolicitante");
 let inputMonto = document.getElementById("inputMonto");
 let inputProveedor = document.getElementById("inputProveedor");
+let inputCatCompra = document.getElementById("inputCatCompra");
+let inputSubCatCompra = document.getElementById("inputSubCatCompra");
+
 
 let inputDescripcion = document.getElementById("inputDescripcion");
 let alertDescripcion = document.getElementById("alertDescripcion");
@@ -126,7 +129,8 @@ let inputRadioFormularioLibros_ = "";
 btnEnviar.addEventListener("click", validateAllInputsForm);
 inputFile.addEventListener("change", showAddFile);
 // inputRegion.addEventListener("change", showFecalertFechaEstimadaAccordingRegion);
-// inputCatCompra.addEventListener("change", showSubCatAccordingCat);
+inputCatCompra.addEventListener("change", showSubCatAccordingCat);
+
 
 buttonReload.addEventListener("click", realoadFunction);
 
@@ -476,6 +480,213 @@ function showAddFile(){
     }
 }
 
+function showSubCatAccordingCat(){
+
+    while (inputSubCatCompra.firstChild) {
+        inputSubCatCompra.removeChild(inputSubCatCompra.firstChild);
+    }
+
+    $("#inputSubCatCompra").append(`<option selected value="">Seleccion SubCategoría</option>`);
+
+    if(inputCatCompra.value == "Arriendos"){
+        $("#inputSubCatCompra").append(`<option value="Arr. de Bienes Inmue">Arr. de Bienes Inmue</option>`);
+        $("#inputSubCatCompra").append(`<option value="Arr. de Bienes Muebl">Arr. de Bienes Muebl</option>`);
+        $("#inputSubCatCompra").append(`<option value="Arriendo Equipos e I">Arriendo Equipos e I</option>`);
+        $("#inputSubCatCompra").append(`<option value="Arriendos">Arriendos</option>`);
+    }
+
+    if(inputCatCompra.value == "Bases de Datos y Suscripciones"){
+        $("#inputSubCatCompra").append(`<option value="B.de datos Académica">B.de datos Académica</option>`);
+        $("#inputSubCatCompra").append(`<option value="Base de datos Comerc">Base de datos Comerc</option>`);
+        $("#inputSubCatCompra").append(`<option value="Membresia">Membresia</option>`);
+        $("#inputSubCatCompra").append(`<option value="Suscrip Diarios y re">Suscrip Diarios y re</option>`);
+        $("#inputSubCatCompra").append(`<option value="Suscrip. Académicas">Suscrip. Académicas</option>`);        
+    }
+
+    if(inputCatCompra.value == "Campos Clínicos"){
+        $("#inputSubCatCompra").append(`<option value="Campos Clinicos">Campos Clinicos</option>`);
+    }
+
+    if(inputCatCompra.value == "Certificación"){
+        $("#inputSubCatCompra").append(`<option value="Certificación">Certificación</option>`);
+    }
+
+    if(inputCatCompra.value == "Consultoría"){
+        $("#inputSubCatCompra").append(`<option value="Consultorias">Consultorias</option>`);
+        $("#inputSubCatCompra").append(`<option value="Diseño">Diseño</option>`);
+        $("#inputSubCatCompra").append(`<option value="Estudios de Mercado">Estudios de Mercado</option>`);
+        $("#inputSubCatCompra").append(`<option value="Interpretes y Traduc">Interpretes y Traduc</option>`);
+        $("#inputSubCatCompra").append(`<option value="Legales">Legales</option>`);
+        $("#inputSubCatCompra").append(`<option value="Serv Invest. y desar">Serv Invest. y desar</option>`);
+    }
+
+    if(inputCatCompra.value == "Correspondencia y Traslados"){
+        $("#inputSubCatCompra").append(`<option value="Correo y Envío de Co">Correo y Envío de Co</option>`);
+        $("#inputSubCatCompra").append(`<option value="Fletes y Traslados">Fletes y Traslados</option>`);
+        $("#inputSubCatCompra").append(`<option value="Movilización Persona">Movilización Persona</option>`);
+    }
+
+    if(inputCatCompra.value == "Eventos"){
+        $("#inputSubCatCompra").append(`<option value="Auspicios Eventos">Auspicios Eventos</option>`);
+        $("#inputSubCatCompra").append(`<option value="Eventos y Celebracio">Eventos y Celebracio</option>`);    
+    }
+
+    if(inputCatCompra.value == "Gastos de Promoción y Publicidad"){
+        $("#inputSubCatCompra").append(`<option value="Asesorias Publicitar">Asesorias Publicitar</option>`);
+        $("#inputSubCatCompra").append(`<option value="Publicidad">Publicidad</option>`);   
+    }
+
+    if(inputCatCompra.value == "Gastos de Viaje y Representación"){
+        $("#inputSubCatCompra").append(`<option value="Alojamiento, Viático">Alojamiento, Viático</option>`);
+        $("#inputSubCatCompra").append(`<option value="Pasajes (Participaci">Pasajes (Participaci</option>`);      
+    }
+
+    if(inputCatCompra.value == "Impresos"){
+        $("#inputSubCatCompra").append(`<option value="Central de Apuntes">Central de Apuntes</option>`);
+        $("#inputSubCatCompra").append(`<option value="Folletos">Folletos</option>`);
+        $("#inputSubCatCompra").append(`<option value="Fotocopias y servici">Fotocopias y servici</option>`);
+        $("#inputSubCatCompra").append(`<option value="Servicio de Empaste">Servicio de Empaste</option>`);       
+    }
+
+    if(inputCatCompra.value == "Insumos Administrativos"){
+        $("#inputSubCatCompra").append(`<option value="Accesorios de Lumina">Accesorios de Lumina</option>`);
+        $("#inputSubCatCompra").append(`<option value="Ferreteria">Ferreteria</option>`);
+        $("#inputSubCatCompra").append(`<option value="Insumos de Aseo">Insumos de Aseo</option>`);
+        $("#inputSubCatCompra").append(`<option value="Insumos Generales">Insumos Generales</option>`);
+        $("#inputSubCatCompra").append(`<option value="Materiales Oficina">Materiales Oficina</option>`);
+        $("#inputSubCatCompra").append(`<option value="Víveres y Comestible">Víveres y Comestible</option>`); 
+    }
+
+    if(inputCatCompra.value == "Insumos Carreras Salud y Laboratorios"){
+        $("#inputSubCatCompra").append(`<option value="Fármacos y materiale">Fármacos y materiale</option>`);
+        $("#inputSubCatCompra").append(`<option value="Insumo para ensayo C">Insumo para ensayo C</option>`);
+        $("#inputSubCatCompra").append(`<option value="Insumos Laboratorios">Insumos Laboratorios</option>`);
+        $("#inputSubCatCompra").append(`<option value="Material de Docencia">Material de Docencia</option>`);
+        $("#inputSubCatCompra").append(`<option value="Material de Investig">Material de Investig</option>`);
+        $("#inputSubCatCompra").append(`<option value="Materiales Clinicos">Materiales Clinicos</option>`);
+        $("#inputSubCatCompra").append(`<option value="Materiales Odontolog">Materiales Odontolog</option>`);
+        $("#inputSubCatCompra").append(`<option value="Reactivos">Reactivos</option>`);
+        $("#inputSubCatCompra").append(`<option value="Reactivos y Material">Reactivos y Material</option>`);
+    }
+
+    if(inputCatCompra.value == "Insumos Promoción y Publicidad"){
+        $("#inputSubCatCompra").append(`<option value="Gasto Artículos Prom">Gasto Artículos Prom</option>`);
+        $("#inputSubCatCompra").append(`<option value="Materiales y Artícul">Materiales y Artícul</option>`);
+        $("#inputSubCatCompra").append(`<option value="Regalos Corporativos">Regalos Corporativos</option>`);
+    }
+
+    if(inputCatCompra.value == "Mantención Preventiva y Correctiva"){
+        $("#inputSubCatCompra").append(`<option value="Mant  Equipos comuni">Mant  Equipos comuni</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mant Bombas y estanq">Mant Bombas y estanq</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mant Equipos Audiovi">Mant Equipos Audiovi</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mant Equipos segurid">Mant Equipos segurid</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mant. Equip. y Mobil">Mant. Equip. y Mobil</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mant. Instrumentos M">Mant. Instrumentos M</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mant. Redes de Gas">Mant. Redes de Gas</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mantde Equipo de Lab">Mantde Equipo de Lab</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mantención de Aire A">Mantención de Aire A</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mantención de Ascens">Mantención de Ascens</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mantención de Calder">Mantención de Calder</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mantención de Camara">Mantención de Camara</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mantención de Ductos">Mantención de Ductos</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mantención de Edific">Mantención de Edific</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mantención de Electr">Mantención de Electr</option>`);
+        $("#inputSubCatCompra").append(`<option value="Mantención y Reparac">Mantención y Reparac</option>`);
+        $("#inputSubCatCompra").append(`<option value="Manutención Sanitari">Manutención Sanitari</option>`);    
+    }
+
+    if(inputCatCompra.value == "Materiales no Productivos"){
+        $("#inputSubCatCompra").append(`<option value="Caja de navidad">Caja de navidad</option>`);
+        $("#inputSubCatCompra").append(`<option value="Carnet Universitario">Carnet Universitario</option>`);
+        $("#inputSubCatCompra").append(`<option value="Materiales de Manten">Materiales de Manten</option>`);
+        $("#inputSubCatCompra").append(`<option value="Pase escolar">Pase escolar</option>`);
+        $("#inputSubCatCompra").append(`<option value="Regalos Recien Nacid">Regalos Recien Nacid</option>`);
+        $("#inputSubCatCompra").append(`<option value="Reposicion de Mantel">Reposicion de Mantel</option>`);
+        $("#inputSubCatCompra").append(`<option value="Señaleticas">Señaleticas</option>`);    
+    }
+
+    if(inputCatCompra.value == "Medicina"){
+        $("#inputSubCatCompra").append(`<option value="Part médicas consult">Part médicas consult</option>`);
+    }
+
+    if(inputCatCompra.value == "Otra"){
+        $("#inputSubCatCompra").append(`<option value="Otro">Otro</option>`);
+    }
+
+    if(inputCatCompra.value == "Presencia en Medios"){
+        $("#inputSubCatCompra").append(`<option value="Presencia en Medios">Presencia en Medios</option>`);
+    }
+
+    if(inputCatCompra.value == "Seguro"){
+        $("#inputSubCatCompra").append(`<option value="Seguro Vida y Salud">Seguro Vida y Salud</option>`);
+        $("#inputSubCatCompra").append(`<option value="Seguros Todo Riesgo y RC">Seguros Todo Riesgo y RC</option>`);
+    }
+
+    if(inputCatCompra.value == "Seminarios"){
+        $("#inputSubCatCompra").append(`<option value="Seminarios Residenci">Seminarios Residenci</option>`);
+    }
+
+    if(inputCatCompra.value == "Servicios Básicos"){
+        $("#inputSubCatCompra").append(`<option value="Agua">Agua</option>`);
+        $("#inputSubCatCompra").append(`<option value="Combustible">Combustible</option>`);
+        $("#inputSubCatCompra").append(`<option value="Gas">Gas</option>`);
+        $("#inputSubCatCompra").append(`<option value="Luz">Luz</option>`);
+        $("#inputSubCatCompra").append(`<option value="Telefonía (Residenci">Telefonía (Residenci</option>`);        
+    }
+
+    if(inputCatCompra.value == "Servicios de Alimentación"){
+        $("#inputSubCatCompra").append(`<option value="Almuerzo Personal">Almuerzo Personal</option>`);
+        $("#inputSubCatCompra").append(`<option value="Ceremonia de Titulac">Ceremonia de Titulac</option>`);
+        $("#inputSubCatCompra").append(`<option value="Serv Alimentacion">Serv Alimentacion</option>`);         
+    }
+
+    if(inputCatCompra.value == "Servicios e Infraestructura Tecnológica"){
+        $("#inputSubCatCompra").append(`<option value="Adm y soporte Red">Adm y soporte Red</option>`);
+        $("#inputSubCatCompra").append(`<option value="Internet">Internet</option>`);
+        $("#inputSubCatCompra").append(`<option value="Leasing Computaciona">Leasing Computaciona</option>`);
+        $("#inputSubCatCompra").append(`<option value="Licencias de SW">Licencias de SW</option>`);
+        $("#inputSubCatCompra").append(`<option value="Seguridad Informátic">Seguridad Informátic</option>`);
+        $("#inputSubCatCompra").append(`<option value="Servicio Enlace Dedi">Servicio Enlace Dedi</option>`);
+        $("#inputSubCatCompra").append(`<option value="Servicios Outsorcing">Servicios Outsorcing</option>`);
+        $("#inputSubCatCompra").append(`<option value="Soporte y Mant Aplic">Soporte y Mant Aplic</option>`);
+        $("#inputSubCatCompra").append(`<option value="Soporte y Mant hardw">Soporte y Mant hardw</option>`);   
+    }
+
+    if(inputCatCompra.value == "Servicios Externos"){
+        $("#inputSubCatCompra").append(`<option value="Fotografia">Fotografia</option>`);
+        $("#inputSubCatCompra").append(`<option value="Gastos de Vehículos">Gastos de Vehículos</option>`);
+        $("#inputSubCatCompra").append(`<option value="Sala Cuna">Sala Cuna</option>`);
+        $("#inputSubCatCompra").append(`<option value="Serv.búsqueda y Sele">Serv.búsqueda y Sele</option>`);
+        $("#inputSubCatCompra").append(`<option value="Servicios de Desinfe">Servicios de Desinfe</option>`);
+        $("#inputSubCatCompra").append(`<option value="Servicios de Digitac">Servicios de Digitac</option>`);
+        $("#inputSubCatCompra").append(`<option value="Servicios Esteriliza">Servicios Esteriliza</option>`);
+        $("#inputSubCatCompra").append(`<option value="Servicios Lavandería">Servicios Lavandería</option>`); 
+    }
+
+    if(inputCatCompra.value == "Servicios Financieros"){
+        $("#inputSubCatCompra").append(`<option value="Servicio Cobranza">Servicio Cobranza</option>`);
+    }
+
+    if(inputCatCompra.value == "Servicios Operación Campus"){
+        $("#inputSubCatCompra").append(`<option value="Aseo">Aseo</option>`);
+        $("#inputSubCatCompra").append(`<option value="Jardines y Paisajism">Jardines y Paisajism</option>`);
+        $("#inputSubCatCompra").append(`<option value="Seguridad">Seguridad</option>`);
+        $("#inputSubCatCompra").append(`<option value="Servicio de Aseos Ex">Servicio de Aseos Ex</option>`);
+    }
+
+    if(inputCatCompra.value == "Transporte de Personas"){
+        $("#inputSubCatCompra").append(`<option value="Servicios de Moviliz">Servicios de Moviliz</option>`);
+    }
+
+    if(inputCatCompra.value == "Traslado de Basura"){
+        $("#inputSubCatCompra").append(`<option value="Traslado de Basura">Traslado de Basura</option>`);
+    }
+
+    if(inputCatCompra.value == "Uniformes"){
+        $("#inputSubCatCompra").append(`<option value="Uniformes Auxiliares">Uniformes Auxiliares</option>`);
+    }
+
+}
 
 
 });
